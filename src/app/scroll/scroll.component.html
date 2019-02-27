@@ -1,3 +1,6 @@
-<p>
-  scroll works!
-</p>
+
+<div class="city" *ngFor="let city of cities">
+  <h2>{{city.location}}</h2>
+  <p>{{city.description}}</p>
+  <img [src]="city.thumbnail" alt="">
+</div>
