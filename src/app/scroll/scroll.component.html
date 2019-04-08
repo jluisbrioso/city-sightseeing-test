@@ -1,6 +1,7 @@
-
+<body class="cards">
 <div class="city" *ngFor="let city of cities">
-  <h2>{{city.location}}</h2>
-  <p>{{city.description}}</p>
-  <img [src]="city.thumbnail" alt="">
+  <h2 class="name">{{city.location}}</h2>
+  <p class="desc">{{city.description}}</p>
+  <img class="vis"[src]="city.thumbnail" title="{{city.location}}" alt="">
 </div>
+</body>

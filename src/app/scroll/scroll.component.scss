@@ -1,0 +1,67 @@
+body{
+    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12) no-repeat center center fixed; //whole dom???
+    background-size: cover;
+    border: 2px solid black;
+  }
+
+
+.cards > .city{
+    .name { order: 1; }
+    .vis    { order: 2; }
+    .desc { order: 3; }
+    }
+
+
+.cards{
+    padding: 2px;
+    
+
+    .city{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        background-color: #F4F4F8;
+        border: 2px outset #F4F4F8;
+        border-radius:8px;
+        max-width: 20em;
+        margin: 1em;
+
+        &:hover{
+            border: 2px outset #484848;
+        }
+
+
+        .name{
+            font-family: 'Nunito';           
+        }
+
+
+        .vis{
+            width:20em;
+            max-width: 80%;
+            border: 2px solid black;
+        }
+
+
+        .desc{
+            font-family: 'Roboto';
+            max-width: 30em;
+            margin: 1em;
+        }
+    }
+}
+
+  
+  /* Large screens */
+  @media all and (min-width: 800px) {
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        .city{
+            margin: 2em;
+        }
+      }     
+  }
